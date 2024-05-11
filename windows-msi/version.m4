@@ -18,7 +18,7 @@ define([PRODUCT_WINTUN_URL_arm64],     [https://build.openvpn.net/downloads/rele
 
 dnl ovpn-dco binaries
 dnl renovate: datasource=github-releases depName=OpenVPN/ovpn-dco-win
-define([PRODUCT_OVPN_DCO_VERSION],     [1.1.1])
+define([PRODUCT_OVPN_DCO_VERSION],     [1.0.1])
 
 dnl OpenVPNServ2.exe binary
 define([OPENVPNSERV2_URL], [http://build.openvpn.net/downloads/releases/openvpnserv2-1.4.0.1.exe])
@@ -37,16 +37,17 @@ dnl MSI Provisioning
 dnl ============================================================
 
 dnl Define the product name and publisher.
+define([PRODUCT_TITLE],     [IrisClient])
 define([PRODUCT_NAME],      [OpenVPN])
-define([PRODUCT_PUBLISHER], [OpenVPN, Inc.])
+define([PRODUCT_PUBLISHER], [Iris-Cloud, Inc.])
 
 dnl The package version as displayed by UI and used in filenames (no spaces, please).
-define([PACKAGE_VERSION], [2.7git])
+define([PACKAGE_VERSION], [1.0])
 
 dnl The MSI product version in the form of n[.n[.n]] (numbers only).
 dnl The third field is 100*openvpn bugfix release + MSI build number.
 dnl So for the 2nd MSI build for OpenVPN 2.6.3 use 2.6.302
-define([PRODUCT_VERSION], [2.7.0])
+define([PRODUCT_VERSION], [1.0.0])
 
 dnl The MSI product code MUST change on each product release.
 define([PRODUCT_CODE], [{9122FCB2-2BB5-4115-8C0F-05D9B5EFE8D6}])
